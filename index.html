@@ -1,31 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Flashcard</title>
+    <title>Biomedicina - A Ciência da Saúde</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #005b96;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #005b96;
+            border-bottom: 2px solid #005b96;
+            padding-bottom: 10px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .image-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .image-card p {
+            padding: 15px;
+            margin: 0;
+        }
+        .highlight {
+            background-color: #e6f2ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #005b96;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <section id="container">
-            <!-- <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Programação</h3>
-                    <div class="cartao__conteudo__pergunta">
-                        <p>O que é JavaScript?</p>
-                    </div>
-                    <div class="cartao__conteudo__resposta">
-                        <p>O JavaScript é uma linguagem de programação</p>
-                    </div>
+    <header>
+        <div class="container">
+            <h1>Biomedicina</h1>
+            <p>A ciência que une biologia e medicina para melhorar a saúde humana</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>O que é Biomedicina?</h2>
+            <p>A Biomedicina é uma área da saúde que investiga as causas das doenças humanas, seus mecanismos e possíveis tratamentos. O biomédico atua na pesquisa de doenças, análises clínicas, desenvolvimento de vacinas e medicamentos, entre outras áreas.</p>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pesquisa em laboratório">
+                    <p>Pesquisa científica em laboratório biomédico</p>
                 </div>
-            </article> -->
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a9d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Análise de amostras">
+                    <p>Análise de amostras biológicas em microscópio</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Tecnologia médica">
+                    <p>Tecnologia avançada em diagnósticos biomédicos</p>
+                </div>
+            </div>
         </section>
-    </main>
+
+        <section>
+            <h2>Áreas de Atuação</h2>
+            <p>O biomédico pode trabalhar em diversas especialidades, entre elas:</p>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1578496781985-452d4a934d50?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Análises Clínicas">
+                    <p><strong>Análises Clínicas:</strong> Realiza exames e interpreta resultados para diagnóstico de doenças.</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pesquisa Genética">
+                    <p><strong>Genética:</strong> Estuda DNA e genes para entender doenças hereditárias.</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1581093057305-20b0d5c6b8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Imagenologia">
+                    <p><strong>Imagenologia:</strong> Realiza e interpreta exames de imagem como ressonância e tomografia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight">
+            <h2>Importância da Biomedicina</h2>
+            <p>A Biomedicina tem um papel crucial na saúde pública, contribuindo para:</p>
+            <ul>
+                <li>Descoberta de novas doenças e seus tratamentos</li>
+                <li>Desenvolvimento de vacinas e medicamentos</li>
+                <li>Melhoria nos métodos de diagnóstico</li>
+                <li>Pesquisa com células-tronco e terapia genética</li>
+                <li>Controle de qualidade de alimentos e medicamentos</li>
+            </ul>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1581093057923-7257d840a9d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Vacinas">
+                    <p>Desenvolvimento de vacinas salva milhões de vidas</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pesquisa com células-tronco">
+                    <p>Pesquisa com células-tronco promete revolucionar a medicina</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Tecnologias em Biomedicina</h2>
+            <p>A área está em constante evolução com novas tecnologias:</p>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Sequenciamento genético">
+                    <p><strong>Sequenciamento Genético:</strong> Permite análise detalhada do DNA humano</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a9d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Microscopia avançada">
+                    <p><strong>Microscopia Avançada:</strong> Visualização de estruturas celulares em alta resolução</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1581093057305-20b0d5c6b8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Inteligência Artificial">
+                    <p><strong>Inteligência Artificial:</strong> Auxiliando no diagnóstico e pesquisa médica</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <footer>
-        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+        <div class="container">
+            <p>© 2023 Biomedicina - Todos os direitos reservados</p>
+            <p>Site educativo sobre a importância da biomedicina na saúde</p>
+        </div>
     </footer>
-    <script src="app.js"></script>
-    <script src="perguntas.js"></script>
 </body>
 </html>
